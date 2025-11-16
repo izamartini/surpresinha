@@ -1,13 +1,19 @@
 body {
-    background: #ffe6f2;
+background: #ffe6f2;
     font-family: "Arial", sans-serif;
     margin: 0;
+
+    /* CENTRALIZAR CONTAINER */
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    min-height: 100vh;       /* altura mínima = altura da tela */
 }
 
 /* Container geral */
 .container {
     max-width: 600px;
-    margin: 20px auto;
+    /* margin: 20px auto; <-- REMOVA essa linha */
     background: white;
     padding: 25px;
     border-radius: 20px;
@@ -89,4 +95,5 @@ button:hover {
         padding: 14px;
     }
 }
+
 
