@@ -1,21 +1,37 @@
 body {
-    background-color: #ffe6f2;
+    background: #ffe6f2;
     font-family: "Arial", sans-serif;
-    margin: 0;    
+    margin: 0;
 }
 
+/* Container geral */
 .container {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 20px auto;
     background: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     text-align: center;
 }
 
+/* Títulos */
 h1 {
     color: #ff4d88;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+/* Texto e lista */
+.mensagem {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 10px;
 }
 
 .lista {
@@ -23,18 +39,19 @@ h1 {
     margin: 20px auto;
     width: fit-content;
     font-size: 18px;
+    padding-left: 15px;
 }
 
+/* Botão */
 button {
     background: #ff80b3;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 14px 22px;
     border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-
 }
 
 button:hover {
@@ -45,4 +62,30 @@ button:hover {
 .colorido {
     background: linear-gradient(120deg, #ffd6e7, #fff3cd, #d6f5ff);
     transition: 0.5s;
+}
+
+/* RESPONSIVIDADE*/
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .mensagem, .lista {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+    }
 }
